@@ -1,0 +1,23 @@
+{
+  "name": "mynatours",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slowtraincar/sample.git"
+  },
+  "author": "Doug A. Carter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slowtraincar/sample/issues"
+  },
+  "homepage": "https://github.com/slowtraincar/sample#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
