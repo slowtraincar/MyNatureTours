@@ -227,11 +227,29 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
-  .card___side {
-    background-color: orangered;
+  -moz-perspective: 150rem;
+  -webkit-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    color: #fff;
+    font-size: 2rem;
     height: 50rem;
-    transition: all .8s; }
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 /*home*/
 .section-about {
